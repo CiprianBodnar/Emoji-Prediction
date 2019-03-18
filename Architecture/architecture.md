@@ -15,3 +15,6 @@ _Multilingual Emoji Predictor_
 
    For preprocessing and noise reduction we will use the [ekphrasis](https://github.com/cbaziotis/ekphrasis) tool, which can also provide useful insights of some words via annotations (hashtag, allcaps, elongated, repeated, emphasis, censored). We may try to remove _uninteresting_ words (such as connection words) for better results.
 
+   * ### Arhitectural diagram
+    ![Diagram](https://github.com/CiprianBodnar/Multilingual-Emoji-Prediction/Architecture/architecture.png?raw=True "Architectural Diagram")
+
