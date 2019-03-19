@@ -15,14 +15,14 @@ stop_words = set(stopwords.words('english'))
 def tweet_preprocessing(tweet):
     
     #tweet_segm = text_processor.pre_process_doc(tweet)
-    new_tweet = []
+    lemma = []
     for word in puncttok(tweet):
         if word[0] !='<' and word[-1] != '>' and word not in stop_words:
             word = seg_tw.segment(word)
             word = sp.correct(word)
-            new_tweet.append(word)
+            lemma.append(word)
       
-    return new_tweet
+    return lemma
 
 
 
