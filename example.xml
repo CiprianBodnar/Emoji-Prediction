@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<result>
+    <tweet>Bla bla bla</tweet>
+    <predictions>
+        <prediction label="1">0.12</prediction>
+        <prediction label="2">0.54</prediction>
+        <prediction label="3">0.12</prediction>
+        <prediction label="4">0.54</prediction>
+        <prediction label="5">0.67</prediction>
+        <prediction label="6">0.10</prediction>
+        <prediction label="7">0</prediction>
+        <prediction label="8">1</prediction>
+        <prediction label="9">0.1</prediction>
+        <prediction label="10">0.23</prediction>
+        <prediction label="11">0.25</prediction>
+        <prediction label="12">0.8</prediction>
+        <prediction label="13">0.9</prediction>
+        <prediction label="14">0.19</prediction>
+        <prediction label="15">0.28</prediction>
+        <prediction label="16">0.09</prediction>
+        <prediction label="17">0.63</prediction>
+        <prediction label="18">0.18</prediction>
+        <prediction label="19">0.19</prediction>
+        <prediction label="20">0.12</prediction>
+    </predictions>
+</result>
