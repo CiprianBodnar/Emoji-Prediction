@@ -1,7 +1,6 @@
+<!ELEMENT result (tweet,predictions)>
+<!ELEMENT tweet (#PCDATA)>
+<!ELEMENT predictions (prediction+)>
+<!ELEMENT prediction (#PCDATA)>
 
-    <!ELEMENT result (tweet,predictions) >
-    <!ELEMENT tweet (#PCDATA) >
-    <!ELEMENT predictions (prediction+) >
-    <!ELEMENT prediction (#PCDATA) >
-
-    <!ATTLIST prediction label CDATA #REQUIRED>
+<!ATTLIST prediction label CDATA #REQUIRED>

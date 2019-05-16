@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <result>
-    <tweet>Bla bla bla</tweet>
+    <tweet>I think today is about to be a great day.. </tweet>
     <predictions>
         <prediction label="1">0.12</prediction>
         <prediction label="2">0.54</prediction>
@@ -24,3 +24,4 @@
         <prediction label="20">0.12</prediction>
     </predictions>
 </result>
+
