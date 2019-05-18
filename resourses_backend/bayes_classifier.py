@@ -58,7 +58,7 @@ def word_prob_for_label(word, label):
     n_label = json_object['totals']['occurences'][label]
     voc_len = json_object['totals']['voc_len']
     prob = (n_k + 1) / (n_label + voc_len)
-    return (n_k + 1) / (n_label + voc_len)
+    return prob
 
 def tweet_prob_for_label(tokens, label):
     product = 1

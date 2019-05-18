@@ -1,5 +1,6 @@
 from flask import Flask, request, Response
 from flask_cors import CORS, cross_origin
+from urllib.parse import quote, unquote
 import resourses_backend.bayes_classifier as res
 
 
@@ -34,7 +35,17 @@ mapping = {
 
 @app.route('/api/emoji', methods=['GET', 'POST', 'OPTIONS'])
 def process_request():
-    tweet = request.form['tweet']
+    tweet = ''
+    if 'tweet' in request.form:
+        tweet = request.form['tweet']
+    elif 'tweet' in request.args:
+        tweet = unquote(request.args['tweet'])
+    else:
+        return Response('<error>tweet required</error>', 400, headers={
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Headers': 'Content-Type',
+        }, mimetype='text/xml')
+
     lemmas = res.normalize_tweet(tweet)
     emojis = res.classify_tweet(lemmas)
     root = ET.Element('root')
