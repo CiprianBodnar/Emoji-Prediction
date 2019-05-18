@@ -1,0 +1,1 @@
+web: gunicorn main:tweet-to-emoji
