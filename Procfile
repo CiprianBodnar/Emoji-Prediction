@@ -1,1 +1,1 @@
-web: gunicorn main:tweet-to-emoji
+web: gunicorn main:app
