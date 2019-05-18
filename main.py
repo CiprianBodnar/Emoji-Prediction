@@ -1,7 +1,7 @@
 from flask import Flask, request, Response
 from flask_cors import CORS, cross_origin
 from urllib.parse import quote, unquote
-import resourses_backend.bayes_classifier as res
+import backend_resources.bayes_classifier as res
 
 
 import xml.etree.cElementTree as ET
