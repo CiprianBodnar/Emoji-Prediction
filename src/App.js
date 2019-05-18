@@ -5,7 +5,7 @@ import Logo from './components/Logo';
 import TextArea from './components/TextArea';
 import EmojiDisplay from './components/EmojiDisplay';
 
-const API_URL = '/api/emoji?tweet=';
+const API_URL = 'localhost:5050/api/emoji?tweet=';
 
 export default class App extends Component {
 	constructor(props) {
