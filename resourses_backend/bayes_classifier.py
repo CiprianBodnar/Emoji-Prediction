@@ -1,6 +1,6 @@
 import json
-import sys
 import re
+import os
 
 from nltk import pos_tag
 from nltk.tokenize import word_tokenize
@@ -24,7 +24,7 @@ def get_wordnet_pos(pos: str):
         return None
 
 
-json_file_name = sys.argv[1]
+json_file_name = os.path.join('data', 'us', 'scoring.json')
 json_file = open(json_file_name)
 json_object = json.load(json_file)
 json_file.close()
@@ -58,7 +58,6 @@ def word_prob_for_label(word, label):
     n_label = json_object['totals']['occurences'][label]
     voc_len = json_object['totals']['voc_len']
     prob = (n_k + 1) / (n_label + voc_len)
-    print("Probability that {} is labeled {}: {}".format(word, label, prob))
     return (n_k + 1) / (n_label + voc_len)
 
 def tweet_prob_for_label(tokens, label):
@@ -71,9 +70,3 @@ def classify_tweet(tokens):
     probabilities = [tweet_prob_for_label(tokens, label) for label in range(0, 20)]
     prob_list = [i for i in range(0, 20)]
     return sorted(prob_list, key=lambda x: probabilities[x], reverse=True)
-
-if __name__ == "__main__":
-    tweet = input("Enter tweet: ")
-    lemmas = normalize_tweet(tweet)
-    
-    print(classify_tweet(lemmas))
