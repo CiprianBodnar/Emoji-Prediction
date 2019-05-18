@@ -1,0 +1,9 @@
+.emoji-container{
+    padding: 2em;
+    text-align: center;
+}
+
+.emoji-container span{
+    font-size: 3em;
+    margin: 0 .3em;
+}
