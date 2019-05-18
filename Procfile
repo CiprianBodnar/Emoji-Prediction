@@ -1,1 +1,2 @@
-web: concurrently "serve -s build" "gunicorn main:app"
+web: npm start
+web: gunicorn main:app
