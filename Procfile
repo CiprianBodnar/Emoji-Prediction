@@ -1,1 +1,1 @@
-web: concurrently "serve -g build" "gunicorn main:app"
+web: concurrently "serve -s build" "gunicorn main:app"
