@@ -106,4 +106,7 @@ venv.bak/
 .mypy_cache/
 
 # tweet train data
-data/
+data/*/*.txt
+data/*/*.labels
+data/*/*.text
+data/*/*.ids
