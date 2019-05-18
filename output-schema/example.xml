@@ -1,27 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<result>
-    <tweet>I think today is about to be a great day.. </tweet>
-    <predictions>
-        <prediction label="1">0.12</prediction>
-        <prediction label="2">0.54</prediction>
-        <prediction label="3">0.12</prediction>
-        <prediction label="4">0.54</prediction>
-        <prediction label="5">0.67</prediction>
-        <prediction label="6">0.10</prediction>
-        <prediction label="7">0</prediction>
-        <prediction label="8">1</prediction>
-        <prediction label="9">0.1</prediction>
-        <prediction label="10">0.23</prediction>
-        <prediction label="11">0.25</prediction>
-        <prediction label="12">0.8</prediction>
-        <prediction label="13">0.9</prediction>
-        <prediction label="14">0.19</prediction>
-        <prediction label="15">0.28</prediction>
-        <prediction label="16">0.09</prediction>
-        <prediction label="17">0.63</prediction>
-        <prediction label="18">0.18</prediction>
-        <prediction label="19">0.19</prediction>
-        <prediction label="20">0.12</prediction>
-    </predictions>
-</result>
-
+<root>
+    <tweet>Lovely day at the beach #sunisup</tweet>
+    <ordering>
+        <emoji emoji_name="_red_heart_" label="0" position="1" />
+        <emoji emoji_name="_smiling_face_with_hearteyes_" label="1" position="2" />
+        <emoji emoji_name="_sun_" label="12" position="3" />
+        <emoji emoji_name="_two_hearts_" label="3" position="4" />
+        <emoji emoji_name="_smiling_face_with_smiling_eyes_" label="5" position="5" />
+        <emoji emoji_name="_smiling_face_with_sunglasses_" label="6" position="6" />
+        <emoji emoji_name="_blue_heart_" label="8" position="7" />
+        <emoji emoji_name="_sparkles_" label="7" position="8" />
+        <emoji emoji_name="_face_blowing_a_kiss_" label="9" position="9" />
+        <emoji emoji_name="_camera_" label="10" position="10" />
+        <emoji emoji_name="_face_with_tears_of_joy_" label="2" position="11" />
+        <emoji emoji_name="_winking_face_" label="14" position="12" />
+        <emoji emoji_name="_purple_heart_" label="13" position="13" />
+        <emoji emoji_name="_beaming_face_with_smiling_eyes_" label="16" position="14" />
+        <emoji emoji_name="_winking_face_with_tongue_" label="19" position="15" />
+        <emoji emoji_name="_fire_" label="4" position="16" />
+        <emoji emoji_name="_camera_with_flash_" label="18" position="17" />
+        <emoji emoji_name="_Christmas_tree_" label="17" position="18" />
+        <emoji emoji_name="_United_States_" label="11" position="19" />
+        <emoji emoji_name="_hundred_points_" label="15" position="20" />
+    </ordering>
+</root>

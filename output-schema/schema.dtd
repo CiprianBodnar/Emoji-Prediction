@@ -1,6 +1,8 @@
-<!ELEMENT result (tweet,predictions)>
+<!ELEMENT root (tweet,ordering)>
 <!ELEMENT tweet (#PCDATA)>
-<!ELEMENT predictions (prediction+)>
-<!ELEMENT prediction (#PCDATA)>
+<!ELEMENT ordering (emoji+)>
+<!ELEMENT emoji (#PCDATA)>
 
-<!ATTLIST prediction label CDATA #REQUIRED>
+<!ATTLIST emoji label CDATA #REQUIRED>
+<!ATTLIST emoji emoji_name CDATA #REQUIRED>
+<!ATTLIST emoji position CDATA #REQUIRED>
